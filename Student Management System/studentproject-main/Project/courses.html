@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="students.html">Students</a>
+    <a href="courses.html">Courses</a>
+    <a href="about.html">About</a>
+    <button onclick="logout()">Logout</button>
+</nav>
+
+<div class="container column">
+
+    <h1>Courses</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="/studentproject-main/Project/WhatsApp Image 2026-04-08 at 14.31.59.jpeg" class="course-img">
+            <h3>Java Programming</h3>
+            <p>Learn core Java concepts and OOP.</p>
+            <button onclick="enroll('Java')">Enroll</button>
+        </div>
+
+        <div class="card">
+            <img src="/studentproject-main/Project/WhatsApp Image 2026-04-08 at 14.32.34.jpeg" class="course-img">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript basics.</p>
+            <button onclick="enroll('Web Dev')">Enroll</button>
+        </div>
+
+        <div class="card">
+            <img src="/studentproject-main/Project/WhatsApp Image 2026-04-08 at 14.35.14.jpeg" class="course-img">
+            <h3>Database Systems</h3>
+            <p>Learn SQL and database design.</p>
+            <button onclick="enroll('DBMS')">Enroll</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

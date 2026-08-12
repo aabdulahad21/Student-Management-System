@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <a href="dashboard.html">Dashboard</a>
+  <a href="students.html">Students</a>
+  <a href="courses.html">Courses</a>
+  <a href="about.html">About</a>
+  <button onclick="logout()">Logout</button>
+</nav>
+
+<div class="container">
+
+    <!-- FORM -->
+    <div class="form-section">
+        <h2>Add / Edit Student</h2>
+
+        <input id="name" placeholder="Name">
+        <input id="usn" placeholder="USN">
+        <input id="marks" type="number" placeholder="Marks">
+
+        <button onclick="addOrUpdateStudent()" id="submitBtn">
+            Add Student
+        </button>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-section">
+
+        <h2>Student List</h2>
+
+        <input id="search" placeholder="Search..." onkeyup="searchStudent()">
+
+        <button onclick="sortByMarks()">Sort by Marks</button>
+        <button onclick="sortByName()">Sort by Name</button>
+
+        <select onchange="filterGrade(this.value)">
+            <option value="all">All Grades</option>
+            <option value="A">Grade A</option>
+            <option value="B">Grade B</option>
+            <option value="C">Grade C</option>
+            <option value="F">Grade F</option>
+        </select>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>USN</th>
+                    <th>Marks</th>
+                    <th>Grade</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTable"></tbody>
+        </table>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

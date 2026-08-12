@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="students.html">Students</a>
+    <a href="courses.html">Courses</a>
+    <a href="about.html">About</a>
+    <button onclick="logout()">Logout</button>
+</nav>
+
+<div class="container column">
+
+    <h1 id="welcome">Welcome</h1>
+
+    <img src="/studentproject-main/Project/WhatsApp Image 2026-04-08 at 14.49.41.jpeg">
+
+    <div class="cards">
+        <div class="card">Total Students: <span id="total"></span></div>
+        <div class="card">Average Marks: <span id="avg"></span></div>
+        <div class="card">Highest Marks: <span id="high"></span></div>
+        <div class="card">Lowest Marks: <span id="low"></span></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+document.getElementById("welcome").innerText = "Welcome";
+updateStats();
+</script>
+
+</body>
+</html>
