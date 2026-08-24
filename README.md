@@ -67,11 +67,11 @@ The dashboard displays:
 
 ### Student Management
 
-![Student Management](screenshots/students.png)
+![Student Management](./Student%20Management%20System/studentproject-main/Project/screenshots/students.png)
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](./Student%20Management%20System/studentproject-main/Project/screenshots/dashboard.png)
 
 ## Project Structure
 
