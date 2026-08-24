@@ -4,7 +4,7 @@ A web-based Student Management System developed using HTML, CSS, and JavaScript.
 
 ## Live Demo
 
-[View Live Demo](YOUR_NETLIFY_URL)
+[View Live Demo]([YOUR_NETLIFY_URL](https://student-management-system1231.netlify.app/))
 
 ## Technologies Used
 
