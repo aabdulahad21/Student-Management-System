@@ -63,7 +63,7 @@ The dashboard displays:
 
 ### Login Page
 
-![Login Page](./Student%20Management%20System/screenshots/login.png)
+![Login Page](./Student%20Management%20System/studentproject-main/Project/screenshots/login.png)
 
 ### Student Management
 
