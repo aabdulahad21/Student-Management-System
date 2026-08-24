@@ -8,6 +8,10 @@ if (!localStorage.getItem("loggedIn")) {
     }
 }
 
+// =============== EDIT INDEX =============
+
+let editIndex = -1;
+
 // ================= LOGOUT =================
 
 function logout() {
@@ -72,11 +76,11 @@ let students = JSON.parse(localStorage.getItem("students"));
 // If no data exists, preload default students
 if (!students || students.length === 0) {
     students = [
-        { name: "A Abdul Ahad", usn: "1SG23EC001", marks: 85 },
-        { name: "Bharath", usn: "1SG23EC002", marks: 92 },
-        { name: "Harsha V G", usn: "1SG23EC003", marks: 76 },
-        { name: "Hemanth H A", usn: "1SG23EC004", marks: 64 },
-        { name: "Sudarshan", usn: "1SG23EC005", marks: 48 }
+        { name: "Rahul", usn: "CS001", marks: 85 },
+        { name: "Ram", usn: "CS002", marks: 92 },
+        { name: "Kumar", usn: "CS003", marks: 76 },
+        { name: "John", usn: "CS004", marks: 64 },
+        { name: "Sam", usn: "CS005", marks: 48 }
     ];
 
     localStorage.setItem("students", JSON.stringify(students));
